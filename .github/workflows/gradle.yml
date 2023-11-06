@@ -55,23 +55,9 @@ jobs:
       - name: print env
         run: echo "${{ secrets.OCCUPY_SECRET }}"
 
-#      # 비밀 정보 복사
-#      - name: Copy Secret
-#        env:
-#          OCCUPY_SECRETS: ${{ secrets.OCCUPY_SECRET }}
-##          OCCUPY_DEV_SECRETS: ${{ secrets.OCCUPY_DEV_SECRET }}
-#          OCCUPY_SECRET_DIR: src/main/resources
-#          OCCUPY_SECRET_FILE: application.yml
-##          OCCUPY_SECRET_DEV_FILE: application-dev.yml
-#        run: |
-#          echo $OCCUPY_SECRETS | base64 --decode > $OCCUPY_SECRET_DIR/$OCCUPY_SECRET_FILE &&
-##          echo $OCCUPY_DEV_SECRET | base64 --decode > $OCCUPY_SECRET_DIR/$OCCUPY_SECRET_DEV_FILE
-
-
-
       # Gradlew 실행 권한 설정
       - name: Run chmod to make gradlew executable
-        run: chmod +x ./gradlew
+        run: chmod +x ./back-end/gradlew
         working-directory: ./back-end # gradlew 파일이 있는 디렉토리로 이동
 
       # Gradle로 빌드
@@ -81,11 +67,9 @@ jobs:
           arguments: build
         working-directory: ./back-end # Gradle 프로젝트의 루트 디렉토리로 이동
 
-
-
       # Unit 테스트 결과 게시
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
-          junit_files: build/test-results/test/**/*.xml
+          junit_files: back-end/build/test-results/test/**/*.xml
