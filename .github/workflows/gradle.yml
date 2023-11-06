@@ -74,12 +74,14 @@ jobs:
         run: chmod +x ./gradlew
         working-directory: ./back-end # gradlew 파일이 있는 디렉토리로 이동
 
-
       # Gradle로 빌드
       - name: Build with Gradle
         uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
         with:
           arguments: build
+        working-directory: ./back-end # Gradle 프로젝트의 루트 디렉토리로 이동
+
+
 
       # Unit 테스트 결과 게시
       - name: Publish Unit Test Results
