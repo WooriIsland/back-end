@@ -152,21 +152,5 @@ public class BuildingLocationInfo {
         this.islandId = islandId;
     }
 
-    // Constructor
-    public BuildingLocationInfo(Long buildingId, String buildingName, String buildingIndex, Double buildingPosX, Double buildingPosY, Double buildingPosZ, Double buildingRotX, Double buildingRotY, Double buildingRotZ, Double buildingRotW, Double buildingLatitude, Double buildingLongitude, Long islandId) {
-        this.buildingId = buildingId;
-        this.buildingName = buildingName;
-        this.buildingIndex = buildingIndex;
-        this.buildingPosX = buildingPosX;
-        this.buildingPosY = buildingPosY;
-        this.buildingPosZ = buildingPosZ;
-        this.buildingRotX = buildingRotX;
-        this.buildingRotY = buildingRotY;
-        this.buildingRotZ = buildingRotZ;
-        this.buildingRotW = buildingRotW;
-        this.buildingLatitude = buildingLatitude;
-        this.buildingLongitude = buildingLongitude;
-        this.islandId = islandId;
-    }
 
 }
