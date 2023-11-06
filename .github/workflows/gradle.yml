@@ -11,9 +11,9 @@ name: Java CI with Gradle
 # 워크플로우를 언제 실행할지에 대한 정의
 on:
   push:
-    branches: [ "develop" ] # 'develop' 브랜치에 푸시될 때
+    branches: [ "main" ] # 'main' 브랜치에 푸시될 때
   pull_request:
-    branches: [ "develop" ] # 'develop' 브랜치에 pull request가 열릴 때
+    branches: [ "main" ] # 'main' 브랜치에 pull request가 열릴 때
 
 # 워크플로우에서 사용할 권한 설정
 permissions:
