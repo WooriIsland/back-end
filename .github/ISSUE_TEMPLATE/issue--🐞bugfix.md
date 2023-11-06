@@ -2,7 +2,7 @@
 name: "Issue: 🐞 BugFix"
 about: bugfix 작업사항을 입력해주세요.
 title: "[BugFix] "
-labels: bugfix
+labels: 🐞 BugFix
 assignees: ''
 
 ---
