@@ -1,46 +1,42 @@
 package com.blacky.our_island.controller;
 
 import com.blacky.our_island.domain.BuildingLocationInfo;
-import com.blacky.our_island.repository.BuildingLocationInfoRepository;
+import com.blacky.our_island.service.BuildingLocationInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/building-location-info")
 public class BuildingLocationInfoController {
 
     @Autowired
-    private BuildingLocationInfoRepository buildingLocationInfoRepository;
+    private BuildingLocationInfoService buildingLocationInfoService;
 
     @GetMapping
     public List<BuildingLocationInfo> getAllBuildingLocationInfo() {
-        return buildingLocationInfoRepository.findAll();
+        return buildingLocationInfoService.getAllBuildingLocationInfo();
     }
 
     @GetMapping("/{buildingId}")
     public BuildingLocationInfo getBuildingLocationInfoById(@PathVariable Long buildingId) {
-        return buildingLocationInfoRepository.findById(buildingId).orElse(null);
+        return buildingLocationInfoService.getBuildingLocationInfoById(buildingId);
     }
 
     @PostMapping
     public BuildingLocationInfo createBuildingLocationInfo(@RequestBody BuildingLocationInfo buildingLocationInfo) {
-        return buildingLocationInfoRepository.save(buildingLocationInfo);
+        return buildingLocationInfoService.createBuildingLocationInfo(buildingLocationInfo);
     }
 
     @PutMapping("/{buildingId}")
     public BuildingLocationInfo updateBuildingLocationInfo(@PathVariable Long buildingId, @RequestBody BuildingLocationInfo updatedBuildingLocationInfo) {
-        BuildingLocationInfo buildingLocationInfo = buildingLocationInfoRepository.findById(buildingId).orElse(null);
-        if (buildingLocationInfo != null) {
-            // Update fields as needed
-            return buildingLocationInfoRepository.save(buildingLocationInfo);
-        }
-        return null;
+        return buildingLocationInfoService.updateBuildingLocationInfo(buildingId, updatedBuildingLocationInfo);
     }
 
     @DeleteMapping("/{buildingId}")
     public void deleteBuildingLocationInfo(@PathVariable Long buildingId) {
-        buildingLocationInfoRepository.deleteById(buildingId);
+        buildingLocationInfoService.deleteBuildingLocationInfo(buildingId);
     }
 }
