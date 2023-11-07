@@ -1,7 +1,7 @@
 package com.blacky.our_island.controller;
 
 import com.blacky.our_island.domain.User;
-import com.blacky.our_island.repository.UserRepository;
+import com.blacky.our_island.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,38 +12,32 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
     @GetMapping
     public List<User> getAllUsers() {
-        return userRepository.findAll();
+        return userService.getAllUsers();
     }
 
     @GetMapping("/{userId}")
     public User getUserById(@PathVariable Long userId) {
-        return userRepository.findById(userId).orElse(null);
+        return userService.getUserById(userId);
     }
 
     @PostMapping
     public User createUser(@RequestBody User user) {
-        return userRepository.save(user);
+        return userService.createUser(user);
     }
 
     @PutMapping("/{userId}")
     public User updateUser(@PathVariable Long userId, @RequestBody User updatedUser) {
-        User user = userRepository.findById(userId).orElse(null);
-        if (user != null) {
-            user.setUserName(updatedUser.getUserName());
-            user.setNickname(updatedUser.getNickname());
-            user.setCharacter(updatedUser.getCharacter());
-            user.setIslandId(updatedUser.getIslandId());
-            return userRepository.save(user);
-        }
-        return null;
+        return userService.updateUser(userId, updatedUser);
     }
 
+
     @DeleteMapping("/{userId}")
-    public void deleteUser(@PathVariable Long userId) {
-        userRepository.deleteById(userId);
+    public String deleteUser(@PathVariable Long userId) {
+        userService.deleteUser(userId);
+        return "ID가 " + userId + "인 사용자가 성공적으로 삭제되었습니다.";
     }
 }
