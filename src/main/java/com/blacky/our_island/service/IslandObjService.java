@@ -1,5 +1,6 @@
 package com.blacky.our_island.service;
 
+import com.blacky.our_island.domain.Island;
 import com.blacky.our_island.domain.IslandObj;
 import com.blacky.our_island.repository.IslandObjRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,10 +29,12 @@ public class IslandObjService {
     public IslandObj updateIslandObj(Long islandObjId, IslandObj updatedIslandObj) {
         IslandObj islandObj = islandObjRepository.findById(islandObjId).orElse(null);
         if (islandObj != null) {
+            islandObj.setIslandObjIndex(updatedIslandObj.getIslandObjIndex());
             return islandObjRepository.save(islandObj);
         }
         return null;
     }
+
 
     public void deleteIslandObj(Long islandObjId) {
         islandObjRepository.deleteById(islandObjId);

@@ -11,6 +11,7 @@ public class IslandObj {
 
     @Id
     @Column(name = "island_obj_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long islandObjId;
 
     @Column(name = "island_obj_index", nullable = false)
