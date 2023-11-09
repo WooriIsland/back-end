@@ -9,44 +9,43 @@ public class BuildingLocationInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "building_id")
-    private Long buildingId;  // 건물 번호
+    private Long buildingId;
 
     @Column(name = "building_name")
-    private String buildingName;  // 건물명
+    private String buildingName;
 
     @Column(name = "building_index")
-    private String buildingIndex;  // 건물 오브젝트 index
+    private String buildingIndex;
 
     @Column(name = "building_pos_x")
-    private Double buildingPosX;  // 위치 X
+    private Double buildingPosX;
 
     @Column(name = "building_pos_y")
-    private Double buildingPosY;  // 위치 Y
+    private Double buildingPosY;
 
     @Column(name = "building_pos_z")
-    private Double buildingPosZ;  // 위치 Z
+    private Double buildingPosZ;
 
     @Column(name = "building_rot_x")
-    private Double buildingRotX;  // 회전 X
+    private Double buildingRotX;
 
     @Column(name = "building_rot_y")
-    private Double buildingRotY;  // 회전 Y
+    private Double buildingRotY;
 
     @Column(name = "building_rot_z")
-    private Double buildingRotZ;  // 회전 Z
+    private Double buildingRotZ;
 
     @Column(name = "buildling_rot_w")
-    private Double buildingRotW;  // 회전 W
+    private Double buildingRotW;
 
     @Column(name = "building_latitude")
-    private Double buildingLatitude;  // 위도
+    private Double buildingLatitude;
 
     @Column(name = "building_longitude")
-    private Double buildingLongitude;  // 경도
+    private Double buildingLongitude;
 
     @Column(name = "island_id")
-    private Long islandId;  // 가족섬 번호
-
+    private Long islandId;
 
     // Getter Setter
     public Long getBuildingId() {
