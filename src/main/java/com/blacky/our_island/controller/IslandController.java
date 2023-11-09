@@ -3,6 +3,7 @@ package com.blacky.our_island.controller;
 import com.blacky.our_island.domain.Island;
 import com.blacky.our_island.service.IslandService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -38,4 +39,13 @@ public class IslandController {
     public void deleteIsland(@PathVariable Long islandId) {
         islandService.deleteIsland(islandId);
     }
+
+//
+//    @DeleteMapping("/{islandId}")
+//    public ResponseEntity<String> deleteIsland(@PathVariable Long islandId) {
+//        islandService.deleteIsland(islandId);
+//        return ResponseEntity.ok("Island deleted successfully");
+//    }
+
+
 }

@@ -28,11 +28,12 @@ public class IslandService {
     public Island updateIsland(Long islandId, Island updatedIsland) {
         Island island = islandRepository.findById(islandId).orElse(null);
         if (island != null) {
-            // Update fields as needed
+            island.setIslandUniqueNumber(updatedIsland.getIslandUniqueNumber());
             return islandRepository.save(island);
         }
         return null;
     }
+
 
     public void deleteIsland(Long islandId) {
         islandRepository.deleteById(islandId);
