@@ -47,7 +47,6 @@ public class BuildingLocationInfo {
     @Column(name = "island_id")
     private Long islandId;
 
-    // Getter Setter
     public Long getBuildingId() {
         return buildingId;
     }
