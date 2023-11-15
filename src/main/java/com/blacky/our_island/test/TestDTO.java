@@ -1,4 +1,4 @@
-package com.blacky.our_island.dto;
+package com.blacky.our_island.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

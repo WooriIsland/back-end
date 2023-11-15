@@ -33,7 +33,7 @@ public class BuildingLocationInfoService {
 
         buildingLocationInfo.setIslandId(Long.parseLong(buildingInfo.get("island_id").toString()));
         buildingLocationInfo.setBuildingName(buildingInfo.get("building_name").toString());
-        buildingLocationInfo.setBuildingIndex(buildingInfo.get("building_index").toString()); // 수정된 부분
+        buildingLocationInfo.setBuildingIndex(buildingInfo.get("building_index").toString());
         buildingLocationInfo.setBuildingLatitude(Double.parseDouble(buildingInfo.get("building_latitude").toString()));
         buildingLocationInfo.setBuildingLongitude(Double.parseDouble(buildingInfo.get("building_longitude").toString()));
 

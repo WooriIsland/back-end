@@ -1,6 +1,5 @@
 package com.blacky.our_island.service;
 
-import com.blacky.our_island.domain.Island;
 import com.blacky.our_island.domain.IslandObj;
 import com.blacky.our_island.repository.IslandObjRepository;
 import org.springframework.beans.factory.annotation.Autowired;

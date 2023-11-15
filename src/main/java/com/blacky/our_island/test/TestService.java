@@ -1,4 +1,4 @@
-package com.blacky.our_island.service;
+package com.blacky.our_island.test;
 
 import org.springframework.stereotype.Service;
 
