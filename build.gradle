@@ -35,6 +35,32 @@ dependencies {
     // RUN
     implementation 'org.springframework.boot:spring-boot-devtools'
 
+    // jdbc
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+    // security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    // Login JWT
+    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.2'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.2'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.2'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    // validation
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.5.6'
+
+    // json
+    implementation 'com.google.code.gson:gson:2.8.8'
+
+    // redis로 인증 번호 유효 시간 저장
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    // email 인증
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
 }
 
 tasks.named('test') {
