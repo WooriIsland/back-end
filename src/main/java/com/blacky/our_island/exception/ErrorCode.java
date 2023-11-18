@@ -21,6 +21,7 @@ public enum ErrorCode {
     INVALID_PASSWORD(HttpStatus.UNAUTHORIZED, "패스워드가 잘못되었습니다."),
 
     DUPLICATED_ISLAND_UNIQUE_NUMBER(HttpStatus.CONFLICT, "island_unique_number이 중복됩니다."),
+    ISLAND_NOT_FOUND(HttpStatus.NOT_FOUND, "가족섬를 찾을 수 없습니다."),
 
     ;
 
