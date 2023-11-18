@@ -1,10 +1,10 @@
-package com.blacky.our_island.domain;
+package com.blacky.our_island.local;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "user")
-public class User {
+public class UserLocal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
