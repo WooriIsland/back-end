@@ -19,6 +19,9 @@ public enum ErrorCode {
     DUPLICATED_USER_EMAIL(HttpStatus.CONFLICT, "User Email이 중복됩니다."),
     DUPLICATED_USER_NICKNAME(HttpStatus.CONFLICT, "User NickName이 중복됩니다."),
     INVALID_PASSWORD(HttpStatus.UNAUTHORIZED, "패스워드가 잘못되었습니다."),
+
+    DUPLICATED_ISLAND_UNIQUE_NUMBER(HttpStatus.CONFLICT, "island_unique_number이 중복됩니다."),
+
     ;
 
     private HttpStatus status;

@@ -5,6 +5,7 @@ import com.blacky.our_island.service.IslandService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -47,12 +48,18 @@ public class IslandController {
         islandService.deleteIsland(islandId);
     }
 
-//
-//    @DeleteMapping("/{islandId}")
-//    public ResponseEntity<String> deleteIsland(@PathVariable Long islandId) {
-//        islandService.deleteIsland(islandId);
-//        return ResponseEntity.ok("Island deleted successfully");
-//    }
 
+    // 섬 생성된 지 얼마나 되었는가
+    @GetMapping("/{islandId}/days-since-creation")
+    @Operation(summary = "섬 생성 날짜 조회", description = "섬 생성 날짜를 조회합니다.", tags = {"GET"})
+    public ResponseEntity<Long> getDaysSinceCreation(@PathVariable Long islandId) {
+        Island island = islandService.getIslandById(islandId);
+        if (island == null) {
+            return ResponseEntity.notFound().build();
+        }
+
+        long daysSinceCreation = island.getDaysSinceCreation();
+        return ResponseEntity.ok(daysSinceCreation);
+    }
 
 }
