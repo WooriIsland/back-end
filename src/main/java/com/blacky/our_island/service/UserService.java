@@ -35,7 +35,6 @@ public class UserService {
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     private final TokenProvider tokenProvider;
     private final RefreshTokenRepository refreshTokenRepository;
-    private final IslandService islandService;
 
     @Value("${jwt.token.secret}")
     private String secretKey;
@@ -78,8 +77,6 @@ public class UserService {
         refreshTokenRepository.save(refreshToken);
 
 
-        // 4. islandUniqueNumber 값 가져오기
-        String islandUniqueNumber = islandService.getIslandUniqueNumber(user.getIslandId());
 
         // 5. 토큰 발급 및 Unity에서 요구하는 값 전달
         return LoginResponseDto.builder()
@@ -87,7 +84,6 @@ public class UserService {
                 .userId(user.getUser_id())
                 .nickname(user.getNickname())
                 .character(user.getCharacter())
-                .islandUniqueNumber(islandUniqueNumber)
                 .build();
     }
 

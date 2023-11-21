@@ -14,6 +14,5 @@ public class LoginResponseDto {
     private Long userId;
     private String nickname;
     private String character;
-    private String islandUniqueNumber;
 
 }
