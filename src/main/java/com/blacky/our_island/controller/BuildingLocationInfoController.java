@@ -36,13 +36,13 @@ public class BuildingLocationInfoController {
     }
 
     @DeleteMapping("/{buildingId}")
-    @Operation(summary = "건물 위치정보 수정", description = "건물 위치정보를 수정합니다.", tags = {"DELETE"})
+    @Operation(summary = "건물 위치정보 삭제", description = "건물 위치정보를 삭제합니다.", tags = {"DELETE"})
     public void deleteBuildingLocationInfo(@PathVariable Long buildingId) {
         buildingLocationInfoService.deleteBuildingLocationInfo(buildingId);
     }
 
     @PutMapping("/{buildingId}")
-    @Operation(summary = "건물 위치정보 삭제", description = "건물 위치정보를 삭제합니다.", tags = {"PUT"})
+    @Operation(summary = "건물 위치정보 수정", description = "건물 위치정보를 수정합니다.", tags = {"PUT"})
     public void updateBuildingLocationInfo(@PathVariable Long buildingId, @RequestBody Map<String, Object> buildingInfo) {
         buildingLocationInfoService.updateBuildingLocationInfo(buildingId, buildingInfo);
     }
