@@ -1,5 +1,7 @@
 package com.blacky.our_island.controller;
 
+import com.blacky.our_island.domain.dto.EmailCode.CodeRequest;
+import com.blacky.our_island.domain.dto.EmailCode.EmailRequest;
 import com.blacky.our_island.domain.dto.token.LoginResponseDto;
 import com.blacky.our_island.domain.dto.token.TokenDto;
 import com.blacky.our_island.domain.dto.token.TokenRequestDto;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/users")
@@ -49,20 +52,41 @@ public class UserRestController {
     }
 
     // 인증 메일 보내기
-    @GetMapping("/send-auth-email")
+//    @PostMapping("/send-auth-email")
+//    @Operation(summary = "인증 메일 보내기", description = "인증 메일을 보냅니다.")
+//    public Response<String> sendAuthEmail(@RequestParam String email) throws Exception {
+//        System.out.println("email = " + email);
+//        return Response.success(emailService.sendLoginAuthMessage(email));
+//    }
+
+    @PostMapping("/send-auth-email")
     @Operation(summary = "인증 메일 보내기", description = "인증 메일을 보냅니다.")
-    public Response<String> sendAuthEmail(@RequestParam String email) throws Exception {
+    public Response<String> sendAuthEmail(@RequestBody EmailRequest request) throws Exception {
+        String email = request.getEmail();
         System.out.println("email = " + email);
         return Response.success(emailService.sendLoginAuthMessage(email));
     }
 
-    // 인증 메일 확인 하기
-    @GetMapping("/check-auth-email")
+
+//    // 인증 메일 확인 하기
+//    @PostMapping("/check-auth-email")
+//    @Operation(summary = "인증 코드 확인하기", description = "인증 코드를 확인합니다.")
+//    public Response<Boolean> checkAuthEmail(@RequestParam String code) {
+//        System.out.println(code);
+//        if (emailService.getData(code) == null) return Response.success(false);
+//        else return Response.success(true);
+//    }
+
+    @PostMapping("/check-auth-email")
     @Operation(summary = "인증 코드 확인하기", description = "인증 코드를 확인합니다.")
-    public Response<Boolean> checkAuthEmail(@RequestParam String code) {
+    public Response<Boolean> checkAuthEmail(@RequestBody CodeRequest request) {
+        String code = request.getCode();
         System.out.println(code);
-        if (emailService.getData(code) == null) return Response.success(false);
-        else return Response.success(true);
+        if (emailService.getData(code) == null) {
+            return Response.success(false);
+        } else {
+            return Response.success(true);
+        }
     }
 
     // 단일 조회, 전체 조회, 수정, 삭제 기능 추가

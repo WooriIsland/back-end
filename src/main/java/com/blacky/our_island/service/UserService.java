@@ -9,10 +9,12 @@ import com.blacky.our_island.domain.dto.user.UserJoinRequest;
 import com.blacky.our_island.domain.dto.user.UserLoginRequest;
 import com.blacky.our_island.domain.entity.RefreshToken;
 import com.blacky.our_island.domain.entity.User;
+import com.blacky.our_island.domain.entity.UserDml;
 import com.blacky.our_island.exception.AppException;
 import com.blacky.our_island.exception.ErrorCode;
 import com.blacky.our_island.jwt.TokenProvider;
 import com.blacky.our_island.repository.RefreshTokenRepository;
+import com.blacky.our_island.repository.UserDmlRepository;
 import com.blacky.our_island.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,6 +37,7 @@ public class UserService {
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
     private final TokenProvider tokenProvider;
     private final RefreshTokenRepository refreshTokenRepository;
+    private final UserDmlRepository userDmlRepository;
 
     @Value("${jwt.token.secret}")
     private String secretKey;
@@ -84,6 +87,8 @@ public class UserService {
                 .userId(user.getUser_id())
                 .nickname(user.getNickname())
                 .character(user.getCharacter())
+//                .islandUniqueNumber(user.getIsland().getIslandUniqueNumber())  // 추가된 부분
+                .islandUniqueNumber(user.getIsland() != null ? user.getIsland().getIslandUniqueNumber() : null)
                 .build();
     }
 
@@ -165,6 +170,12 @@ public class UserService {
     }
 
 
+
+    // IllegalArgumentException: rawPassword cannot be null 에러가 발생
+    // updateUser 메소드에서 비밀번호를 수정하지 않는 경우에도 비밀번호 인코딩 로직이 실행되어서 문제가 발생
+    // 사용자 정보 수정 요청에서 비밀번호가 제공되지 않은 경우에는 비밀번호 인코딩 로직을 건너뛰도록 코드 수정
+    /*
+
     @Transactional
     public UserDto updateUser(String email, UserEditRequest userEditRequest) {
         User user = userRepository.findByEmail(email)
@@ -173,10 +184,24 @@ public class UserService {
                 userEditRequest.getEmail(),
                 encoder.encode(userEditRequest.getPassword()),
                 userEditRequest.getNickname(),
-                userEditRequest.getCharacter(),
-                userEditRequest.getIslandId());
+                userEditRequest.getCharacter()
+                ,userEditRequest.getIslandId()
+        );
         return UserDto.of(userRepository.save(user));
     }
+    */
+
+    @Transactional
+    public UserDto updateUser(String email, UserEditRequest userEditRequest) {
+        UserDml user = userDmlRepository.findByEmail(email)
+                .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUNDED));
+
+        user.setIslandId(userEditRequest.getIslandId());
+
+        return UserDto.of(user);
+    }
+
+
 
     @Transactional
     public void deleteUser(String email) {
@@ -184,6 +209,7 @@ public class UserService {
                 .orElseThrow(() -> new AppException(ErrorCode.USER_NOT_FOUNDED));
         userRepository.delete(user);
     }
+
 
 
 

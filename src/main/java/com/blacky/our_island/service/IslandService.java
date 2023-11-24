@@ -49,7 +49,7 @@ public class IslandService {
 
     public String getIslandUniqueNumber(Long islandId) {
         Island island = islandRepository.findById(islandId)
-                .orElseThrow(() -> new AppException(ErrorCode.ISLAND_NOT_FOUND));
+                .orElseThrow(() -> new AppException(ErrorCode.ISLAND_NOT_FOUNDED));
         return island.getIslandUniqueNumber();
     }
 

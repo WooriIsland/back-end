@@ -64,7 +64,7 @@ public class EmailService {
         msgg += "<div style='margin:100px'>";
         msgg += "<h1>이메일 인증번호 안내</h1>";
         msgg += "<br>";
-        msgg += "<p>본 메일은 프로젝트 명 사이트의 회원가입을 위한 이메일 인증입니다.</p>";
+        msgg += "<p>본 메일은 우리 가족섬 APP의 회원가입을 위한 이메일 인증입니다.</p>";
         msgg += "<p>아래의 [이메일 인증번호]를 입력하여 본인확인을 해주시기 바랍니다.</p>";
         msgg += "<br>";
         msgg += "<p>감사합니다.</p>";
@@ -73,7 +73,7 @@ public class EmailService {
         msgg += "<div style='font-size:130%'>";
         msgg += "CODE : <strong>";
         msgg += ePw + "</strong><div><br />";
-        msgg += "<p>(코드의 유호시간은 5분입니다.)</p>";
+        msgg += "<p>(코드의 유효시간은 5분입니다.)</p>";
         msgg += "</div>";
         message.setText(msgg, "utf-8", "html");
         message.setFrom(new InternetAddress("blackymtvs@gmail.com", "우리 가족섬"));
