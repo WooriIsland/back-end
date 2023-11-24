@@ -25,7 +25,7 @@ public enum ErrorCode {
     // 인가
     INVALID_PERMISSION(HttpStatus.FORBIDDEN, "사용자가 권한이 없습니다."),
 
-    //    DUPLICATED_USER_NICKNAME(HttpStatus.CONFLICT, "User NickName이 중복됩니다."),
+//    DUPLICATED_USER_NICKNAME(HttpStatus.CONFLICT, "User NickName이 중복됩니다."),
     DUPLICATED_ISLAND_UNIQUE_NUMBER(HttpStatus.CONFLICT, "island_unique_number이 중복됩니다."),
 
     ISLAND_NOT_FOUNDED(HttpStatus.BAD_REQUEST, "가족섬를 찾을 수 없습니다."),
