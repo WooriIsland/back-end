@@ -33,7 +33,7 @@ public class Island extends BaseEntity {
     private String islandName;
 
     @Column(name = "Secret")
-    private Boolean Secret = true;  // Secret 필드에 아무런 값이 전달되지 않으면 기본값으로 true가 설정.
+    private Boolean Secret = false;  // Secret 필드에 아무런 값이 전달되지 않으면 기본값으로 false로 설정. (false= 공개)
 
     @Column(name = "island_introduce")
     @Size(max = 20)

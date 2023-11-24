@@ -1,6 +1,5 @@
 package com.blacky.our_island.domain.entity;
 
-import com.blacky.our_island.domain.Island;
 import com.blacky.our_island.domain.enum_class.Role;
 import lombok.*;
 
@@ -13,8 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Table(name = "User_TB")
-public class User extends BaseEntity{
-
+public class UserDml {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
@@ -37,25 +35,8 @@ public class User extends BaseEntity{
     @Column(name = "charactor")
     private String character;
 
-    // user와 island를 join 하기
-    @ManyToOne
-    @JoinColumn(name = "island_id")
-    private Island island;
-
-    public void changePassword(String newPassword) {
-        this.password = newPassword;
-    }
-
-    public void updateUser(String password) {
-        this.password = password;
-    }
+    @Column(name = "island_id")
+    private Long islandId;          // 수정된 부분
 
 
-    public void updateUser(String email, String password, String nickname, String character, Long islandId) {
-        this.email = email;
-        this.password = password;
-        this.nickname = nickname;
-        this.character = character;
-        this.island.setIslandId(islandId);
-    }
 }

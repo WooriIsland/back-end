@@ -28,7 +28,7 @@ public enum ErrorCode {
 //    DUPLICATED_USER_NICKNAME(HttpStatus.CONFLICT, "User NickName이 중복됩니다."),
     DUPLICATED_ISLAND_UNIQUE_NUMBER(HttpStatus.CONFLICT, "island_unique_number이 중복됩니다."),
 
-    ISLAND_NOT_FOUND(HttpStatus.BAD_REQUEST, "가족섬를 찾을 수 없습니다."),
+    ISLAND_NOT_FOUNDED(HttpStatus.BAD_REQUEST, "가족섬를 찾을 수 없습니다."),
     ;
 
     private HttpStatus status;
