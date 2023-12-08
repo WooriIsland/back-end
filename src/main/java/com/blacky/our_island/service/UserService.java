@@ -3,10 +3,7 @@ package com.blacky.our_island.service;
 import com.blacky.our_island.domain.dto.token.LoginResponseDto;
 import com.blacky.our_island.domain.dto.token.TokenDto;
 import com.blacky.our_island.domain.dto.token.TokenRequestDto;
-import com.blacky.our_island.domain.dto.user.UserDto;
-import com.blacky.our_island.domain.dto.user.UserEditRequest;
-import com.blacky.our_island.domain.dto.user.UserJoinRequest;
-import com.blacky.our_island.domain.dto.user.UserLoginRequest;
+import com.blacky.our_island.domain.dto.user.*;
 import com.blacky.our_island.domain.entity.RefreshToken;
 import com.blacky.our_island.domain.entity.User;
 import com.blacky.our_island.domain.entity.UserDml;
@@ -211,7 +208,16 @@ public class UserService {
     }
 
 
+    public List<UserByIslandIdDTO> getUsersByIslandId(Long islandId) {
+        List<User> users = userRepository.findByIsland_IslandId(islandId);
 
+        return users.stream()
+                .map(user -> UserByIslandIdDTO.builder()
+                        .nickname(user.getNickname())
+                        .character(user.getCharacter())
+                        .build())
+                .collect(Collectors.toList());
+    }
 
 
 }
