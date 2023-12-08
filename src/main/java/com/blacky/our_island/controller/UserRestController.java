@@ -119,6 +119,11 @@ public class UserRestController {
         return Response.success("Deleted user with email: " + email);
     }
 
+    @GetMapping("/island/{islandId}")
+    @Operation(summary = "섬 ID로 사용자 정보 조회", description = "섬 ID를 기반으로 사용자 정보를 조회합니다.")
+    public Response<List<UserByIslandIdDTO>> getUsersByIslandId(@PathVariable Long islandId) {
+        return Response.success(userService.getUsersByIslandId(islandId));
+    }
 
 
 }
