@@ -228,6 +228,8 @@
 ## 깃플로우
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac" width="70%" height="70%"> <br>
 
+## 수상 내역
+
 
 ## WIKI
 #### [보안 강화](https://github.com/WooriIsland/back-end/wiki/%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94)<br>
