@@ -208,8 +208,23 @@
 
 ## 데이터 모델링
 
-![image](https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f)
+![image](https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f) <br>
 
-<br>
-<br>
-<br>
+## 기술 스택
+
+![image](https://github.com/WooriIsland/back-end/assets/136250818/e98740d3-f9ce-4c4a-b0cc-dedd6a7f85a3) <br>
+
+## 구조도
+
+![image](https://github.com/WooriIsland/back-end/assets/136250818/da650cc4-3e01-4917-841e-dbdd7d5e822c) <br>
+
+## 시스템 구조도 (로그인)
+![image](https://github.com/WooriIsland/back-end/assets/136250818/ea2c4579-b17a-41cb-81b5-3d2070461328) <br>
+
+## 시스템 구조도 (가족섬 조회 구현)
+![image](https://github.com/WooriIsland/back-end/assets/136250818/9cd84761-2bc3-4c93-b79c-58bf4f6ba8eb) <br>
+
+
+
+
+
