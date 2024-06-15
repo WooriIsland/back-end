@@ -120,17 +120,14 @@
 🔹 3D 모델링<br>
 오유림 : 캐릭터 및 맵 모델링
 
-
-
 <br>
-
 
 ### ✔️ 융합구조도
 
 ![image](https://github.com/WooriIsland/AI/assets/115389344/0f0cf7e7-6387-45fa-be83-efebab6f6ac1)
 
 <br>
-
+<br>
 
 # 📅프로젝트 진행 기록
 
@@ -208,6 +205,7 @@
 # 💡 주요 내용
 
 ## 이벤트 스토밍
+#### [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D)<br>
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8) <br>
 
 ## 데이터 모델링
