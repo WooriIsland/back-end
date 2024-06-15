@@ -204,7 +204,7 @@
 ## 디렉토리 구조
 <br>
 
-## 이벤트 스토밍
+## 📔 이벤트 스토밍
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8" width="70%" height="70%"> <br>
 
 ## 데이터 모델링
