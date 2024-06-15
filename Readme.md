@@ -202,20 +202,15 @@
 # 💡 주요 내용
 
 ## 이벤트 스토밍
-
-<br>
-
+![image](https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8) <br>
 
 ## 데이터 모델링
-
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f) <br>
 
 ## 기술 스택
-
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/e98740d3-f9ce-4c4a-b0cc-dedd6a7f85a3) <br>
 
 ## 구조도
-
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/da650cc4-3e01-4917-841e-dbdd7d5e822c) <br>
 
 ## 시스템 구조도 (로그인)
@@ -224,6 +219,11 @@
 ## 시스템 구조도 (가족섬 조회 구현)
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/9cd84761-2bc3-4c93-b79c-58bf4f6ba8eb) <br>
 
+## 온보딩 플로우 차트
+![image](https://github.com/WooriIsland/back-end/assets/136250818/392902d4-59f0-4fcc-8fe4-641d0c8d8f76)
+
+## 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
+![image](https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49)
 
 
 
