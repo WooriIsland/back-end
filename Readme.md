@@ -242,10 +242,7 @@
 
 
 ## WIKI
-#### 보안 강화
-https://github.com/WooriIsland/back-end/wiki/%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94
-#### 이메일 인증 로그인 구현 방식
-https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-%EB%B0%A9%EC%8B%9D
-#### API 명세서
-https://github.com/WooriIsland/back-end/wiki/API-%EB%AA%85%EC%84%B8%EC%84%9C
+#### [보안 강화](https://github.com/WooriIsland/back-end/wiki/%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94)<br>
+#### [이메일 인증 로그인 구현 방식](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-%EB%B0%A9%EC%8B%9D)<br>
+#### [API 명세서](https://github.com/WooriIsland/back-end/wiki/API-%EB%AA%85%EC%84%B8%EC%84%9C)<br>
 
