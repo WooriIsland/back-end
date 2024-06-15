@@ -220,11 +220,19 @@
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/9cd84761-2bc3-4c93-b79c-58bf4f6ba8eb) <br>
 
 ## 온보딩 플로우 차트
-![image](https://github.com/WooriIsland/back-end/assets/136250818/392902d4-59f0-4fcc-8fe4-641d0c8d8f76)
+![image](https://github.com/WooriIsland/back-end/assets/136250818/392902d4-59f0-4fcc-8fe4-641d0c8d8f76) <br>
 
 ## 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
-![image](https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49)
+![image](https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49) <br>
 
+## 이슈발행
+![image](https://github.com/WooriIsland/back-end/assets/136250818/5426d5a3-6b09-483c-b611-a59ebe9b6cbc) <br>
+
+## 라벨링
+![image](https://github.com/WooriIsland/back-end/assets/136250818/5219a96e-74dc-45d1-9e5f-af67c59c7bbb) <br>
+
+## 깃플로우
+![image](https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac) <br>
 
 
 ## WIKI
