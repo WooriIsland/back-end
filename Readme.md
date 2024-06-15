@@ -201,11 +201,17 @@
 
 # 💡 주요 내용
 
+## 디렉토리 구조
+<br>
+
 ## 이벤트 스토밍
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8" width="70%" height="70%"> <br>
 
 ## 데이터 모델링
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f" width="70%" height="70%"> <br>
+
+## E-R Diagram
+<br>
 
 ## ⚒️ 기술 스택
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/e98740d3-f9ce-4c4a-b0cc-dedd6a7f85a3" width="70%" height="70%"> <br>
@@ -218,6 +224,12 @@
 
 ## 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49" width="70%" height="70%"> <br>
+
+## 노션을 통한 기능 명세서
+<br>
+
+## API 명세서
+<img src="https://github.com/WooriIsland/back-end/assets/136250818/a6b451af-05a4-4d77-8293-11b49a03c02f" width="70%" height="70%"> <br>
 
 ## 이슈발행
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5426d5a3-6b09-483c-b611-a59ebe9b6cbc" width="70%" height="70%"> <br>
@@ -236,5 +248,4 @@
 #### [이메일 인증 로그인 구현 방식](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-%EB%B0%A9%EC%8B%9D)<br>
 #### [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D)<br>
 #### [구조도](https://github.com/WooriIsland/back-end/wiki/%EA%B5%AC%EC%A1%B0%EB%8F%84)<br>
-
 #### [API 명세서](https://github.com/WooriIsland/back-end/wiki/API-%EB%AA%85%EC%84%B8%EC%84%9C)<br>
