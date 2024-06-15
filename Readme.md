@@ -205,7 +205,6 @@
 # 💡 주요 내용
 
 ## 이벤트 스토밍
-#### [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D)<br>
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8) <br>
 
 ## 데이터 모델링
@@ -216,12 +215,6 @@
 
 ## 구조도
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/da650cc4-3e01-4917-841e-dbdd7d5e822c) <br>
-
-## 시스템 구조도 (로그인)
-![image](https://github.com/WooriIsland/back-end/assets/136250818/ea2c4579-b17a-41cb-81b5-3d2070461328) <br>
-
-## 시스템 구조도 (가족섬 조회 구현)
-![image](https://github.com/WooriIsland/back-end/assets/136250818/9cd84761-2bc3-4c93-b79c-58bf4f6ba8eb) <br>
 
 ## 온보딩 플로우 차트
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/392902d4-59f0-4fcc-8fe4-641d0c8d8f76) <br>
@@ -243,4 +236,5 @@
 #### [보안 강화](https://github.com/WooriIsland/back-end/wiki/%EB%B3%B4%EC%95%88-%EA%B0%95%ED%99%94)<br>
 #### [이메일 인증 로그인 구현 방식](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%A9%94%EC%9D%BC-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-%EB%B0%A9%EC%8B%9D)<br>
 #### [API 명세서](https://github.com/WooriIsland/back-end/wiki/API-%EB%AA%85%EC%84%B8%EC%84%9C)<br>
-
+#### [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D)<br>
+#### [구조도](https://github.com/WooriIsland/back-end/wiki/%EA%B5%AC%EC%A1%B0%EB%8F%84)<br>
