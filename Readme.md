@@ -9,6 +9,12 @@
 🥇 메타버스 아카데미 2기 최종프로젝트 대상 수상작<br>
 🎥 시연 영상 : [메타버스 아카데미 2기 최종프로젝트 대상 '우리가족섬'](https://youtu.be/vKTtqw60PuQ?si=t9kbl-Yw7uvCULkX)
 
+<!--
+
+#### 🎥 시연 영상
+[![Video Label](https://github.com/WooriIsland/back-end/assets/136250818/f8fec808-70ff-4eb3-86ee-c4593165df97)](https://www.youtube.com/watch?v=HU7_5oF5V0E)
+-->
+
 # 📃 프로젝트 소개
 
 #### 🔹 사이좋은 가족을 위한 메타버스 라이프로깅 SNS
