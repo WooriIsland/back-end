@@ -225,9 +225,6 @@
 ## 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49" width="70%" height="70%"> <br>
 
-## 노션을 통한 기능 명세서
-<br>
-
 ## API 명세서
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/a6b451af-05a4-4d77-8293-11b49a03c02f" width="70%" height="70%"> <br>
 
