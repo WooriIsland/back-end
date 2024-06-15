@@ -133,6 +133,14 @@
 
 <br>
 
+
+### ✔️ Back-end 세부 진행 기록
+[전체 세부 일정 WBS](https://docs.google.com/spreadsheets/d/12BTyTzNEC8ACqqFglZwhzQND0cvLr3vc/edit?gid=1805654614#gid=1805654614)<br>
+
+
+
+
+
 # 💡 주요 내용
 
 ## 이벤트 스토밍
