@@ -6,7 +6,7 @@
 
 ![image](https://github.com/WooriIsland/AI/assets/115389344/ced0ff5b-e4d2-45b0-96b0-221acab0e8a7)
 
-🥇 메타버스 아카데미 2기 최종프로젝트 대상 수상작<br>
+🥇 메타버스 아카데미 2기 최종프로젝트 장관상 수상작<br>
 🎥 시연 영상 : [메타버스 아카데미 2기 최종프로젝트 대상 '우리가족섬'](https://youtu.be/vKTtqw60PuQ?si=t9kbl-Yw7uvCULkX)
 
 <!--
@@ -270,6 +270,8 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac" width="70%" height="70%"> <br>
 
 ## 🏆🥇 수상 내역
+<img src="https://github.com/WooriIsland/back-end/assets/136250818/1d4dc9b5-8b66-4773-aaca-c86ecf992fd5" width="50%" height="50%"> <br>
+
 
 
 ## WIKI
