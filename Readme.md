@@ -260,13 +260,13 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 ## 🧾 API 명세서
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/a6b451af-05a4-4d77-8293-11b49a03c02f" width="70%" height="70%"> <br>
 
-## 이슈발행
+## ✒ 이슈발행
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5426d5a3-6b09-483c-b611-a59ebe9b6cbc" width="70%" height="70%"> <br>
 
 ## ✅ 라벨링
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5219a96e-74dc-45d1-9e5f-af67c59c7bbb" width="70%" height="70%"> <br>
 
-## 깃플로우
+## ➰ 깃플로우
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac" width="70%" height="70%"> <br>
 
 ## 수상 내역
