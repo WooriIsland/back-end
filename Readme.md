@@ -201,8 +201,39 @@
 
 # 💡 주요 내용
 
-## 디렉토리 구조
-<br>
+
+## 🗂 Directory: 디렉토리 구조
+
+```
+/src/main
+├─java
+│  └─com
+│      └─blacky
+│          └─our_island
+│              ├─config
+│              ├─configuration
+│              │  └─filter
+│              ├─controller
+│              ├─domain
+│              │  ├─dto
+│              │  │  ├─EmailCode
+│              │  │  ├─token
+│              │  │  └─user
+│              │  ├─entity
+│              │  └─enum_class
+│              ├─exception
+│              ├─jwt
+│              ├─local
+│              ├─repository
+│              ├─service
+│              ├─test
+│              └─util
+└─resources
+    └─database
+
+/src/test
+└── test                           
+```
 
 ## 📔 이벤트 스토밍
 WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D) <br>
