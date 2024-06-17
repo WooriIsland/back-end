@@ -239,10 +239,10 @@
 WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D) <br>
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8" width="70%" height="70%"> <br>
 
-## 데이터 모델링
+##  데이터 모델링
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f" width="70%" height="70%"> <br>
 
-## E-R Diagram
+## 📊 E-R Diagram
 ![image](https://github.com/WooriIsland/back-end/assets/136250818/0c1fcb44-5c8e-4d4c-84e1-58c0c1636c21) <br>
 
 ## ⚒️ 기술 스택
@@ -251,19 +251,19 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 ## 🧱 아키텍처
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/da650cc4-3e01-4917-841e-dbdd7d5e822c" width="70%" height="70%"> <br>
 
-## 온보딩 플로우 차트
+## 📌 온보딩 플로우 차트
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/392902d4-59f0-4fcc-8fe4-641d0c8d8f76" width="70%" height="70%"> <br>
 
-## 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
+## 📌 플로우 차트 & 기능 정의 & 통신 구조도 & 전체 플로우 요약
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/cafb518b-a16f-4159-9715-08b2b3430b49" width="70%" height="70%"> <br>
 
-## API 명세서
+## 🧾 API 명세서
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/a6b451af-05a4-4d77-8293-11b49a03c02f" width="70%" height="70%"> <br>
 
 ## 이슈발행
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5426d5a3-6b09-483c-b611-a59ebe9b6cbc" width="70%" height="70%"> <br>
 
-## 라벨링
+## ✅ 라벨링
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5219a96e-74dc-45d1-9e5f-af67c59c7bbb" width="70%" height="70%"> <br>
 
 ## 깃플로우
