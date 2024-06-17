@@ -239,7 +239,7 @@
 WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%ED%86%A0%EB%B0%8D) <br>
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/5db17917-3835-416a-902f-deffaf70e7a8" width="70%" height="70%"> <br>
 
-##  데이터 모델링
+## 📄 데이터 모델링
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f" width="70%" height="70%"> <br>
 
 ## 📊 E-R Diagram
@@ -269,7 +269,7 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 ## ➰ 깃플로우
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac" width="70%" height="70%"> <br>
 
-## 수상 내역
+## 🏆🥇 수상 내역
 
 
 ## WIKI
