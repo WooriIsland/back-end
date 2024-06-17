@@ -212,7 +212,7 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/9ab19521-e64c-4059-baa7-7be27acdc87f" width="70%" height="70%"> <br>
 
 ## E-R Diagram
-<br>
+![image](https://github.com/WooriIsland/back-end/assets/136250818/0c1fcb44-5c8e-4d4c-84e1-58c0c1636c21) <br>
 
 ## ⚒️ 기술 스택
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/e98740d3-f9ce-4c4a-b0cc-dedd6a7f85a3" width="70%" height="70%"> <br>
