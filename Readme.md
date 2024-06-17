@@ -269,7 +269,7 @@ WIKI : [이벤트 스토밍](https://github.com/WooriIsland/back-end/wiki/%EC%9D
 ## ➰ 깃플로우
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/626b521a-505a-4b6a-9079-ff2e038414ac" width="70%" height="70%"> <br>
 
-## 🏆🥇 수상 내역
+## 🏆 수상 내역
 <img src="https://github.com/WooriIsland/back-end/assets/136250818/1d4dc9b5-8b66-4773-aaca-c86ecf992fd5" width="50%" height="50%"> <br>
 
 
